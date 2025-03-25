@@ -1,12 +1,12 @@
 
 import React, { useEffect } from 'react';
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
-import PopularArtists from '@/components/PopularArtists';
-import ExploreArtworks from '@/components/ExploreArtworks';
-import AuctionFeature from '@/components/AuctionFeature';
-import HotBidsCarousel from '@/components/HotBidsCarousel';
-import Footer from '@/components/Footer';
+import Navbar from '@/pages/Navbar';
+import Hero from '@/pages/Hero';
+import PopularArtists from '@/pages/PopularArtists';
+import ExploreArtworks from '@/pages/ExploreArtworks';
+import AuctionFeature from '@/pages/AuctionFeature';
+import HotBidsCarousel from '@/pages/HotBidsCarousel';
+import Footer from '@/pages/Footer';
 
 const Index = () => {
   // Scroll to top on page load
