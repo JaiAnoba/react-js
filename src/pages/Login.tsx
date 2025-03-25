@@ -109,14 +109,14 @@ const Login = () => {
               />
             </div>
             
-            <button type="submit" className="auth-button">
+            <button type="submit" className="bg-red-900 text-white text-xs font-medium rounded-full px-5 py-2 transition-all hover:bg-red-800">
               Login
             </button>
           </form>
           
           <div className="text-center">
             <p className="text-sm text-gray-600">
-              Not a member? <button onClick={handleRegisterClick} className="text-brand-red hover:text-brand-darkRed font-medium">Sign up!</button>
+              Not a member? <button onClick={handleRegisterClick} className="text-red-800 hover:text-red-600 font-medium">Sign up!</button>
             </p>
           </div>
         </div>
@@ -138,9 +138,9 @@ const Login = () => {
         
         <div className="relative z-10 flex-1 flex items-center justify-center">
           <img 
-            src="/lovable-uploads/ca5e7f67-258a-4c70-8c74-a49f21d1cd23.png" 
+            src="/pics/statue.png" 
             alt="Greek statue" 
-            className="object-contain max-h-[90%] max-w-[90%] animate-fade-in" 
+            className="object-contain max-h-[100%] max-w-[100%] animate-fade-in border boder-white" 
           />
         </div>
       </motion.div>

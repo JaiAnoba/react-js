@@ -55,9 +55,9 @@ const ImageSection = ({ position = 'left', logo = 'left' }: ImageSectionProps) =
       
       <div className="relative z-10 flex-1 flex items-center justify-center">
         <img 
-          src="/lovable-uploads/ca5e7f67-258a-4c70-8c74-a49f21d1cd23.png" 
+          src="/pics/statue.png" 
           alt="Greek statue" 
-          className="object-contain max-h-[90%] max-w-[90%] animate-fade-in" 
+          className="object-contain max-h-[100%] max-w-[100%] animate-fade-in border boder-white" 
         />
       </div>
     </div>
