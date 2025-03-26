@@ -7,13 +7,10 @@ interface LogoProps {
 
 const Logo = ({ textColor = 'text-white' }: LogoProps) => {
   return (
-    <Link to="/" className="flex items-center no-underline">
-      <div className="h-8 w-8 relative">
-        <div className="absolute inset-0 bg-brand-red" style={{ clipPath: 'polygon(0 0, 50% 0, 100% 50%, 100% 100%, 50% 100%, 0 50%)' }}></div>
-        <div className="absolute inset-0 bg-brand-red rotate-90" style={{ clipPath: 'polygon(0 0, 50% 0, 100% 50%, 100% 100%, 50% 100%, 0 50%)' }}></div>
-      </div>
-      <span className={`ml-2 text-xl font-bold ${textColor}`}>orxist</span>
-    </Link>
+      <Link to="/index" className="flex items-center space-x-2 cursor-pointer">
+        <img src="/pics/logo.png" alt="logo" className=" w-12 h-12 cursor-pointer" />
+        <span className={`-ml-4 mt-3 text-1lg font-semibold cursor-pointer ${textColor}`}>orxist</span>
+      </Link>
   );
 };
 

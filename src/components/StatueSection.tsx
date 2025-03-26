@@ -57,7 +57,7 @@ const ImageSection = ({ position = 'left', logo = 'left' }: ImageSectionProps) =
         <img 
           src="/pics/statue.png" 
           alt="Greek statue" 
-          className="object-contain max-h-[100%] max-w-[100%] animate-fade-in border boder-white" 
+          className="object-contain max-h-[100%] max-w-[100%] animate-fade-in" 
         />
       </div>
     </div>

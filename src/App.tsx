@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Hero from "./pages/Hero";
 
 const queryClient = new QueryClient();
 
@@ -17,9 +18,10 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/index" element={<Index />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/hero" element={<Hero />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
