@@ -15,7 +15,7 @@ import Bidding from "./user_dashboard/Bidding";
 import Marketplace from "./user_dashboard/Marketplace";
 import Exhibits from "./user_dashboard/Exhibits";
 
-// Create a context for the active heart state
+// Active heart state
 export type LikedArtwork = {
   id: string;
   isLiked: boolean;
@@ -41,28 +41,29 @@ const App = () => {
     }));
   };
 
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/index" element={<Index />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/hero" element={<Hero />} />
-          <Route path="/explore" element={<Explore />} />
-          <Route path="/bidding" element={<Bidding />} />
-          <Route path="/marketplace" element={<Marketplace />} />
-          <Route path="/exhibits" element={<Exhibits />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+  return (
+    <LikedArtworksContext.Provider value={{ likedArtworks, toggleLike }}>
+      <QueryClientProvider client={queryClient}>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/index" element={<Index />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/hero" element={<Hero />} />
+              <Route path="/explore" element={<Explore />} />
+              <Route path="/bidding" element={<Bidding />} />
+              <Route path="/marketplace" element={<Marketplace />} />
+              <Route path="/exhibits" element={<Exhibits />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </TooltipProvider>
+      </QueryClientProvider>
+    </LikedArtworksContext.Provider>
+  );
 };
 
 export default App;

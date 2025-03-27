@@ -78,11 +78,13 @@ const Login = () => {
               <a href="#" className="text-red-500">Forgot Password?</a>
             </div>
 
-            <button className="w-full bg-red-900 text-white text-xs font-medium rounded-full px-5 py-2 transition-all hover:bg-red-800">
-              Login
-            </button>
           </form>
-          
+
+          <Link to = "/explore">
+          <button className="w-full bg-red-900 text-white text-xs font-medium rounded-full px-5 py-2 mt-3 transition-all hover:bg-red-800">
+              Login
+          </button>
+          </Link>
         </div>
       </motion.div>
 

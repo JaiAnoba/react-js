@@ -95,3 +95,7 @@
 .carousel-wheel {
   transform-style: preserve-3d;
 }
+
+.card {
+  padding: 2em;
+}

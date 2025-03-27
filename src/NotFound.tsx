@@ -20,9 +20,9 @@ const NotFound = () => {
           <img src="/pics/logo.png" alt="logo" className=" w-12 h-12 " />
         </div>
         <h1 className="text-3xl font-bold mb-4">404</h1>
-        <p className="text-xs text-gray-400 mb-8">The artwork you're looking for seems to have been sold or moved to another gallery.</p>
+        <p className="text-xs text-gray-400 mb-8">Not Found</p>
         <Link 
-          to="/" 
+          to="/index" 
           className="inline-flex items-center space-x-2 bg-white text-black text-xs px-6 py-3 rounded-lg font-medium transition-all hover:bg-gray-200"
         >
           <ArrowLeft className="w-4 h-4" />

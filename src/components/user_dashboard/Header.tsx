@@ -13,7 +13,7 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <div className="flex items-center">
           <Logo />
-          <nav className="ml-10 hidden md:flex space-x-1">
+          <nav className="ml-10 hidden text-xs md:flex space-x-6">
             <Link
               to="/explore"
               className={`nav-link ${currentPath === "/explore" ? "nav-link-active" : ""}`}
@@ -43,12 +43,12 @@ const Header = () => {
 
         <div className="flex items-center space-x-4">
           <button className="button-icon">
-            <MessageCircle size={20} />
+            <MessageCircle size={15} />
           </button>
           <button className="button-icon">
-            <Bell size={20} />
+            <Bell size={15} />
           </button>
-          <Button size="sm" className="bg-red hover:bg-red/90 rounded-full px-4 text-white">
+          <Button size="sm" className="bg-red hover:bg-red/90 rounded-full px-4 text-xs text-red-600 border border-red-600">
             Upgrade
           </Button>
           <Avatar className="h-8 w-8 border">
