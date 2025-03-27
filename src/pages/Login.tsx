@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import Logo from '../components/Logo';
-import InputField from '../components/InputField';
-import SocialButton from '../components/SocialButton';
+import Logo from '../components/page/Logo';
+import InputField from '../components/page/InputField';
+import SocialButton from '../components/page/SocialButton';
 
 const Login = () => {
   const [formData, setFormData] = useState({
