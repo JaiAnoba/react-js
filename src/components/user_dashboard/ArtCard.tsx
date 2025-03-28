@@ -68,14 +68,14 @@ const ArtCard = ({
 
   if (isExplore) {
     return (
-      <div className="art-card group animate-fadeIn rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-md transition-all duration-300">
+      <div className="art-card group animate-fadeIn rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-md transition-all duration-300 border 1px border-gray-200">
         <div className="p-4 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <Avatar className="h-8 w-8 border">
               <AvatarImage src={artistImage} alt={artistName} />
               <AvatarFallback>{artistName.charAt(0)}</AvatarFallback>
             </Avatar>
-            <span className="text-sm font-medium">{artistName}</span>
+            <span className="text-xs font-medium">{artistName}</span>
           </div>
           <div className="relative">
             <button onClick={handleMenuClick} className="p-1 rounded-full hover:bg-secondary">
@@ -91,11 +91,11 @@ const ArtCard = ({
             />
           </div>
         </div>
-        <div className="aspect-square overflow-hidden">
+        <div className="aspect-square overflow-hidden p-4">
           <img
             src={artworkImage}
             alt={`Artwork by ${artistName}`}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            className="w-full h-full object-cover transition-transform duration-700 rounded-xl"
           />
         </div>
         <div className="p-4">
